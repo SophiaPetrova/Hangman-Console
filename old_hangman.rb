@@ -112,28 +112,6 @@ ensure
     stm.close if stm
     db.close if db
 end
-hanged_stats = 0
-win_stats = 0
-total_chances = 5
-wrong_try = 0
-right_guess = ''
-used_letters = ''
-all_letters = right_guess + used_letters
-hanged = <<HANG
- +---+-
- |   |
- |   0
- |   |\\
- |   /\\
--+----------
-HANG
-
-survived = <<WIN
-   (@)
-  ^\\|
-    |/^
-____|_____
-WIN
 
 class String
   def map
